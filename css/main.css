@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: block;
+}
+
+.nav {
+    margin: 2%;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;  
+}
+
+.nav-header {
+    position: fixed;
+    color: #fff;
+    float: left;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 3px;
+    border: 3px solid #fff;
+    border-radius: 5px; 
+}
+
+.navbar {
+    display: -webkit-inline-box;
+    position: fixed;
+    right: 15px;
+    list-style-type: none;
+    text-align: right;
+    
+}
+
+a.smooth-scroll:visited, a.smooth-scroll:hover, a.smooth-scroll:active, a.smooth-scroll:link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px; 
+}
+
+h1 {
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    margin: auto;
+    width: 60%;
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+
+}
+
+h4 {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: Quicksand,sans-serif;
+    font-size: 30px;
+}
+
+
+#home {
+    background: url("../assets/bg-header.jpg") no-repeat center center fixed;
+    background-size: 100%;
+    overflow: hidden;
+    height: 680px; 
+}
