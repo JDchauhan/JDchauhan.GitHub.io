@@ -171,103 +171,237 @@
         <div class="container">
             <div class="skills">
                 <h1 class="heading"> MY SKILLS </h1>
-                <div class="row">
+                <span class="column-skills">
+                    <div class="skill-type">
+                        Front-end
+                    </div>
                     <div class="progress">
                         <div class="skill">
-                            <span>GRAPHICS DESIGN</span>
-                            <span class="right">30%</span>
+                            <span>HTML 5</span>
+                            <span class="right">90%</span>
                         </div>
-                        <div class="progress-bar">
-                                <div id="bar" style="width:30%"></div>
-                        </div>
-                        <div class="skill">
-                            LOGO DESIGN
-                        </div>
-                        <div class="progress-bar">
-        
+                        <div class="progress-bar">                                 
+                            <div id="bar" style="width:90%"></div>
                         </div>
                         <div class="skill">
-                            PRINT DESIGN
+                            <span>CSS 3</span>
+                            <span class="right">70%</span>
                         </div>
                         <div class="progress-bar">
-    
+                            <div id="bar" style="width:70%"></div>
                         </div>
                         <div class="skill">
-                            ILLUSTRATION
+                            <span>JavaScript</span>
+                            <span class="right">80%</span>
+                        </div>
+                        <div class="progress-bar">                
+                            <div id="bar" style="width:30%"></div>
+                        </div>
+                        <div class="skill">
+                            <span>Photoshop</span>
+                            <span class="right">50%</span>
                         </div>
                         <div class="progress-bar">
+                                <div id="bar" style="width:50%"></div>
                         </div>
                     </div>
-                </div>
+                </span>
     
-                <div class="row">
+                <span class="column-skills">
                     <div class="progress">
-                        <div class="skill">
-                            LOGO DESIGN
-                        </div>
-                        <div class="progress-bar">
-    
+                        <div class="skill-type">
+                            Back-end
                         </div>
                         <div class="skill">
-                            BUSINESS CARD DESIGN
+                            <span>PHP</span>
+                            <span class="right">80%</span>
                         </div>
-                        <div class="progress-bar">
-    
-                        </div>
-                        <div class="skill">
-                            LETTERHEAD DESIGN
-                        </div>
-                        <div class="progress-bar">
-    
+                        <div class="progress-bar">                                 
+                            <div id="bar" style="width:80%"></div>
                         </div>
                         <div class="skill">
-                            RESUME/CV DESIGN
+                            <span>MySQL</span>
+                            <span class="right">85%</span>
                         </div>
-                        <div class="progress-bar">
-                        
+                        <div class="progress-bar">                                 
+                            <div id="bar" style="width:85%"></div>
+                        </div>
+                        <div class="skill">
+                            <span>SQL</span>
+                            <span class="right">85%</span>
+                        </div>
+                        <div class="progress-bar">                                 
+                            <div id="bar" style="width:85%"></div>
+                        </div>
+                        <div class="skill">
+                            <span>NoSQL</span>
+                            <span class="right">40%</span>
+                        </div>
+                        <div class="progress-bar">                                 
+                            <div id="bar" style="width:40%"></div>
                         </div>
                     </div>
-                </div>
+                </span>
     
-                <div class="row">
+                <span class="column-skills last-col">
                     <div class="progress">
-                        <div class="skill">
-                            ENVELOP DESIGN
-                        </div>
-                        <div class="progress-bar">
-    
+                        <div class="skill-type">
+                            Competitive / Others
                         </div>
                         <div class="skill">
-                            INVOICE DESIGN
+                            <span>C</span>
+                            <span class="right">90%</span>
                         </div>
-                        <div class="progress-bar">
-                        
-                        </div>
-                        <div class="skill">
-                            FLYER DESIGN
-                        </div>
-                        <div class="progress-bar">
-    
+                        <div class="progress-bar">                                 
+                            <div id="bar" style="width:90%"></div>
                         </div>
                         <div class="skill">
-                            ID CARD DESIGN
+                            <span>Java</span>
+                            <span class="right">70%</span>
                         </div>
-                        <div class="progress-bar">
-    
+                        <div class="progress-bar">                                 
+                            <div id="bar" style="width:70%"></div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <span class="right">60%</span>
+                        </div>
+                        <div class="progress-bar">                                 
+                            <div id="bar" style="width:60%"></div>
+                        </div>
+                        <div class="skill">
+                            <span>Git/GitHub</span>
+                            <span class="right">90%</span>
+                        </div>
+                        <div class="progress-bar">                                 
+                            <div id="bar" style="width:90%"></div>
                         </div>
                     </div>
-                </div>
+                </span>
         
             </div>
             
         </div>
-        
         <!-- end skills -->
-
-
-                
     </section>
 
-    <!-- end service section -->
+    <!-- portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="heading"> PORTFOLIO </h1>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('fullstack')"> Full Stack</button>
+                <button class="btn" onclick="filterSelection('backend')"> Back-end</button>
+                <button class="btn" onclick="filterSelection('frontend')"> Front-end</button>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="row">
+                <div class="column fullstack">
+                    <div class="content">
+                        <h4>Cloudy Vault</h4>
+                        <img src="assets/cloudy-vault.png" alt="Cloudy Vault: Online storage solution" style="width:100%">
+                        <p><b>Status:</b> Ongoing</p>
+                        <p><b>Stack:</b> HTML5, CSS3, JavaScript, PHP, MySQL</p>
+                        <p><b>Roles:</b> FullStack Developer</p>
+                        <p>
+                            It is an online storage solution using web framework.
+                            It is self assigned project
+                        </p>
+                    </div>
+                </div>
+                <div class="column backend">
+                    <div class="content">
+                            <h4>Ebullience 2K18</h4>
+                        <img src="assets/ebul.png" alt="Ebullience 2K18: Annual techfest of NIET" style="width:100%">
+                        <p><b>Status:</b> Complete</p>
+                        <p><b>Stack:</b> HTML5, CSS3, JavaScript, PHP, MySQL</p>
+                        <p><b>Roles:</b> Team Leader, Backend Developer</p>
+                        <p>
+                            This site is developed for Ebullience 2k18 (NIET annual techfest). It is login based
+                            registration for students to participate in events.
+                        </p>
+                    </div>
+                </div>
+                <div class="column backend">
+                    <div class="content">
+                        <h4>AKTU University ZONAL FEST</h4>
+                        <img src="assets/zonal.png" alt="AKTU ZONAL FEST: Technical, literary and management fest 2K18" style=
+                            "width:100%">
+                        <p><b>Status:</b> Complete</p>
+                        <p><b>Stack:</b> HTML5, CSS3, JavaScript, PHP, MySQL</p>
+                        <p><b>Roles:</b> Team Leader, Backend Developer</p>
+                        <p>
+                            This site is developed for zonal level fest of AKTU university (Technical, literary and management)
+                            in 2018.
+                        </p>
+                    </div>
+                </div>
+                <div class="column frontend">
+                    <div class="content">
+                        <h4>AYG</h4>
+                        <img src="assets/ayg.png" alt="AYG: Frontend quiz" style="width:100%">
+                        <p><b>Status:</b> Complete</p>
+                        <p><b>Stack:</b> HTML5, CSS3, JavaScript, JSON</p>
+                        <p>
+                            It is a front-end quiz game based on KBC.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end grid -->
+        </div>          
+                  
+    </section>
+    <!-- end portfolio -->
+    
+                  <script>
+                  filterSelection("all")
+                  function filterSelection(c) {
+                    var x, i;
+                    x = document.getElementsByClassName("column");
+                    if (c == "all") c = "";
+                    for (i = 0; i < x.length; i++) {
+                      w3RemoveClass(x[i], "show");
+                      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                    }
+                  }
+                  
+                  function w3AddClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                    }
+                  }
+                  
+                  function w3RemoveClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                      while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                      }
+                    }
+                    element.className = arr1.join(" ");
+                  }                  
+                  
+                  // Add active class to the current button (highlight it)
+                  var btnContainer = document.getElementById("myBtnContainer");
+                  var btns = btnContainer.getElementsByClassName("btn");
+                  for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function(){
+                      var current = document.getElementsByClassName("btn active");
+                      console.log(current[0]);
+                      current[0].className = current[0].className.replace(" active", "");
+                      this.className += " active";
+                    });
+                  }
+                  </script>
+                  
+
 </body>
 </html>
