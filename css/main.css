@@ -2,10 +2,13 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: Quicksand,sans-serif;
+    
 }
 
 .container {
     display: block;
+    padding: 5% 10%;
 }
 
 .nav {
@@ -42,6 +45,17 @@ a.smooth-scroll:visited, a.smooth-scroll:hover, a.smooth-scroll:active, a.smooth
 }
 
 h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.heading {
+    text-decoration: underline grey double;
+    text-underline-position: under;
+    margin-bottom: 5%;
+}
+
+.home-title {
     position: absolute;
     left: 25%;
     top: 35%;
@@ -50,12 +64,11 @@ h1 {
     font-size: 72px;
     font-weight: 700;
     color: #fff;
-    text-transform: uppercase;
     font-family: Montserrat,sans-serif;
 
 }
 
-h4 {
+.typewriter {
     position: absolute;
     left: 40%;
     top: 50%;
@@ -65,10 +78,121 @@ h4 {
     font-size: 30px;
 }
 
+h5 {
+    font-size: 20px;
+    margin: 0;
+}
+
 
 #home {
     background: url("../assets/bg-header.jpg") no-repeat center center fixed;
     background-size: 100%;
     overflow: hidden;
     height: 680px; 
+}
+
+.about {
+
+}
+
+.intro {
+    height: 400px;
+}
+
+.left-section {
+    float: left;
+}
+.right-section {
+    float: right;
+    width: 65%;
+}
+
+
+.profile-pic-container {
+
+}
+
+.profile-pic {
+    height: 350px;
+    border: 5px solid #fff;
+    box-shadow: 2px 2px 2px 2px #E1E1E1;
+}
+
+.social-links-container {
+    margin: 5% 10%;
+}
+
+.social-links {
+    margin: 5%;
+}
+
+.personal-info {
+    text-align: left;
+    float: left;
+}
+
+.lang {
+    width: 40%;
+    float: right;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+}
+
+th, td, tr {
+    padding: 10px;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    color: grey;
+}
+
+.resume-button {
+    margin: 0 5%;    
+    background-color: #333333;
+    color: white;
+    font-size: 14px; 
+    height: 35px;
+    width: 90%;
+}
+
+.resume-button:hover {
+    background-color: white;
+    color: #333333;
+    border: 1px solid #333333;
+}
+
+.skills {
+    margin: 0 0;
+}
+
+.skill {
+    margin-bottom: 10px;
+    margin-right: 10%;    
+}
+
+.row {
+    width: 33%;
+    text-align: left;
+}
+
+.progress-bar {
+    width: 90%;
+    background-color: grey;
+}
+
+#bar {
+    height: 2px;
+    background-color: black;
+    margin-bottom: 20px; 
+}
+
+.right {
+    float: right;
 }
