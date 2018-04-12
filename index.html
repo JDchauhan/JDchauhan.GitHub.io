@@ -13,43 +13,44 @@
         job. I have experience in Back-end, Full stack web development.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--<script src="js/main.js"></script>-->
     <title>Jagdish Singh</title>
 </head>
 <body>
     <!-- HEADER -->
     <header id="home">
+        
+        <!-- NAVIGATOR -->
+        <section class="nav">
+            <div class="nav-header">JD</div>
+            <div class="nav-content">
+                <ul class="navbar">
+                    <li class="active"><a class="smooth-scroll" href="#home">Home</a></li>
+                    <li class=""><a class="smooth-scroll" href="#about">About</a></li>
+                    <li class=""><a class="smooth-scroll" href="#skills">Skills</a></li>
+                    <li class=""><a class="smooth-scroll" href="#portfolio">Portfolio</a></li>
+                    <li class=""><a class="smooth-scroll" href="#resume">Resume</a></li>
+                    <li class=""><a class="smooth-scroll" href="#contact">Contact</a></li>
+                        
+                </ul>
+            </div>
+        </section>
+        <!-- end NAVIGATION -->
 
-            <!-- NAVIGATOR -->
-            <section class="nav">
-                <div class="nav-header">JD</div>
-                <div class="nav-content">
-                    <ul class="navbar">
-                        <li class="active"><a class="smooth-scroll" href="#home">Home</a></li>
-                        <li class=""><a class="smooth-scroll" href="#about">About</a></li>
-                        <li class=""><a class="smooth-scroll" href="#skills">Skills</a></li>
-                        <li class=""><a class="smooth-scroll" href="#portfolio">Portfolio</a></li>
-                        <li class=""><a class="smooth-scroll" href="#resume">Resume</a></li>
-                        <li class=""><a class="smooth-scroll" href="#contact">Contact</a></li>
-                            
-                    </ul>
-                </div>
-            </section>
-            <!-- end NAVIGATION -->
-    
 
         <!-- Home Section -->
         <section>
             <div class="container">
-                <h1 class="home-title">HI! I'M JAGDISH SINGH</h1>
-                <h4 class="typewriter">A 
+                <h1 class="home-title"> HI! I'M JAGDISH SINGH </h1>
+                <h4 class="typewriter"> A 
                     <!--
                     <span class="typewrite" data-period="2000" data-type="[ &quot;Web Developer.&quot;,&quot;Backend Expert.&quot;]">
                         <span id="type"></span>
                     </span>
                     -->
-                    Web Developer<br/>
-                    A Backend Expert
+                    Web Developer <br/>
+                    A Backend Expert 
             </div>
         </section>
         <!-- end Home Section -->
@@ -67,11 +68,21 @@
                         <img class="profile-pic" src="assets/JD.jpg" />
                     </div>
                     <div class="social-links-container">
-                        <span id="github" class="social-links">hi</span>
-                        <span id="linkdn" class="social-links">bs</span>
-                        <span id="twitter" class="social-links">ih</span>
-                        <span id="fb" class="social-links">sdg</span>
-                        <span id="instagram" class="social-links">dd</span>
+                        <a target="_blank" class="contact-info-link" href="https://www.github.com/JDchauhan">
+                            <span id="github" class="social-links"><i class="small-icon fa fa-github"></i></span>
+                        </a>
+                        <a target="_blank" class="contact-info-link" href="https://www.linkedin.com/in/JDchauhan">
+                            <span id="linkedn" class="social-links"><i class="small-icon fa fa-linkedin"></i></span>
+                        </a>
+                        <a target="_blank" class="contact-info-link" href="https://www.twitter.com/JDchauhan97">
+                            <span id="twitter" class="social-links"><i class="small-icon fa fa-twitter"></i></span>
+                        </a>
+                        <a target="_blank" class="contact-info-link" href="https://www.facebook.com/JDchauhan97">
+                            <span id="fb" class="social-links"><i class="small-icon fa fa-facebook"></i></span>
+                        </a>
+                        <a target="_blank" class="contact-info-link" href="https://t.me/JDchauhan">
+                            <span id="telegram" class="social-links"><i class="small-icon tele-icon fa fa-telegram"></i></span>
+                        </a>
                     </div>
                 </span>
                 <span class="right-section">
@@ -298,10 +309,15 @@
             
             <!-- Portfolio Grid -->
             <div class="row">
-                <div class="column fullstack">
+                <div class="column fullstack frontend">
                     <div class="content">
                         <h4>Cloudy Vault</h4>
-                        <img src="assets/cloudy-vault.png" alt="Cloudy Vault: Online storage solution" style="width:100%">
+                        <div class="proj">
+                            <img src="assets/cloudy-vault.png" class="proj_img" alt="Cloudy Vault: Online storage solution" style="width:100%">
+                            <button class="repo" onclick="window.location.href='abc'">
+                                VIEW
+                            </button>    
+                        </div>
                         <p><b>Status:</b> Ongoing</p>
                         <p><b>Stack:</b> HTML5, CSS3, JavaScript, PHP, MySQL</p>
                         <p><b>Roles:</b> FullStack Developer</p>
@@ -313,8 +329,13 @@
                 </div>
                 <div class="column backend">
                     <div class="content">
-                            <h4>Ebullience 2K18</h4>
-                        <img src="assets/ebul.png" alt="Ebullience 2K18: Annual techfest of NIET" style="width:100%">
+                        <h4>Ebullience 2K18</h4>
+                        <div class="proj">
+                            <img src="assets/ebul.png" class="proj_img" alt="Ebullience 2K18: Annual techfest of NIET" style="width:100%">                        
+                            <button class="repo" onclick="window.location.href='abc'">
+                                VIEW
+                            </button>    
+                        </div>
                         <p><b>Status:</b> Complete</p>
                         <p><b>Stack:</b> HTML5, CSS3, JavaScript, PHP, MySQL</p>
                         <p><b>Roles:</b> Team Leader, Backend Developer</p>
@@ -327,8 +348,13 @@
                 <div class="column backend">
                     <div class="content">
                         <h4>AKTU University ZONAL FEST</h4>
-                        <img src="assets/zonal.png" alt="AKTU ZONAL FEST: Technical, literary and management fest 2K18" style=
+                        <div class="proj">
+                            <img src="assets/zonal.png" class="proj_img" alt="AKTU ZONAL FEST: Technical, literary and management fest 2K18" style=
                             "width:100%">
+                            <button class="repo" onclick="window.location.href='abc'">
+                                VIEW
+                            </button>    
+                        </div>
                         <p><b>Status:</b> Complete</p>
                         <p><b>Stack:</b> HTML5, CSS3, JavaScript, PHP, MySQL</p>
                         <p><b>Roles:</b> Team Leader, Backend Developer</p>
@@ -341,9 +367,15 @@
                 <div class="column frontend">
                     <div class="content">
                         <h4>AYG</h4>
-                        <img src="assets/ayg.png" alt="AYG: Frontend quiz" style="width:100%">
+                        <div class="proj">
+                            <img src="assets/ayg.png" class="proj_img" alt="AYG: Frontend quiz" style="width:100%">
+                            <button class="repo" onclick="window.location.href='abc'">
+                                VIEW
+                            </button>    
+                        </div>
                         <p><b>Status:</b> Complete</p>
                         <p><b>Stack:</b> HTML5, CSS3, JavaScript, JSON</p>
+                        <p><b>Roles:</b> Front-end Developer</p>
                         <p>
                             It is a front-end quiz game based on KBC.
                         </p>
@@ -352,56 +384,265 @@
             </div>
             <!-- end grid -->
         </div>          
-                  
     </section>
     <!-- end portfolio -->
     
-                  <script>
-                  filterSelection("all")
-                  function filterSelection(c) {
-                    var x, i;
-                    x = document.getElementsByClassName("column");
-                    if (c == "all") c = "";
-                    for (i = 0; i < x.length; i++) {
-                      w3RemoveClass(x[i], "show");
-                      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-                    }
-                  }
-                  
-                  function w3AddClass(element, name) {
-                    var i, arr1, arr2;
-                    arr1 = element.className.split(" ");
-                    arr2 = name.split(" ");
-                    for (i = 0; i < arr2.length; i++) {
-                      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-                    }
-                  }
-                  
-                  function w3RemoveClass(element, name) {
-                    var i, arr1, arr2;
-                    arr1 = element.className.split(" ");
-                    arr2 = name.split(" ");
-                    for (i = 0; i < arr2.length; i++) {
-                      while (arr1.indexOf(arr2[i]) > -1) {
-                        arr1.splice(arr1.indexOf(arr2[i]), 1);     
-                      }
-                    }
-                    element.className = arr1.join(" ");
-                  }                  
-                  
-                  // Add active class to the current button (highlight it)
-                  var btnContainer = document.getElementById("myBtnContainer");
-                  var btns = btnContainer.getElementsByClassName("btn");
-                  for (var i = 0; i < btns.length; i++) {
-                    btns[i].addEventListener("click", function(){
-                      var current = document.getElementsByClassName("btn active");
-                      console.log(current[0]);
-                      current[0].className = current[0].className.replace(" active", "");
-                      this.className += " active";
-                    });
-                  }
-                  </script>
-                  
+    <section id="resume">
+        <div class="container">
+            <h1 class="heading">RESUME</h1>
+            <div class="timeline">
+                <div class="timeline-container left-timeline">
+                    <div class="left-duration">
+                        2019
+                    </div>
+                    <div class="timeline-content">
+                        <h3>B.Tech (IT)</h3>
+                        <p>Pursuing</p>
+                        <p>APJ abdul kalam technical University, Lucknow</p>
+                    </div>
+                </div>
+                <div class="timeline-container right-timeline">
+                    <div class="right-duration">
+                        2015
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Intermediate</h3>
+                        <p>78 %</p>
+                        <p>CBSE Board</p>
+                    </div>
+                </div>
+                <div class="timeline-container left-timeline">
+                    <div class="left-duration">
+                        2013
+                    </div>
+                    <div class="timeline-content">
+                        <h3>High School</h3>
+                        <p> 9.4 CGPA</p>
+                        <p>CBSE Board</p>
+                    </div>
+                </div>
+            </div>                      
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h1 class="heading">Contact us</h1>
+            <div class="contact-summary">
+                <p> 
+                    We would love to talk to you about any new projects<br />
+                    You may have or any of the services that we offer
+                </p>
+            </div>
+            <div class="main-contact">
+                <span class="column-contact">
+                    <a target="_blank" href="mailto:Jagdish.chauhan01@gmail.com">
+                        <div class="official-contacts">
+                            <div class="contact-icons">
+                                <svg width="50" height="50">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <g>
+                                            <polygon style="fill:#F2F2F2;" points="484.973,122.808 452.288,451.017 59.712,451.017 33.379,129.16 256,253.802 	"/>
+                                            <polygon style="fill:#F2F2F2;" points="473.886,60.983 256,265.659 38.114,60.983 256,60.983 	"/>
+                                        </g>
+                                        <path style="fill:#F14336;" d="M59.712,155.493v295.524H24.139C10.812,451.017,0,440.206,0,426.878V111.967l39,1.063L59.712,155.493
+                                            z"/>
+                                        <path style="fill:#D32E2A;" d="M512,111.967v314.912c0,13.327-10.812,24.139-24.152,24.139h-35.56V155.493l19.692-46.525
+                                            L512,111.967z"/>
+                                        <path style="fill:#F14336;" d="M512,85.122v26.845l-59.712,43.526L256,298.561L59.712,155.493L0,111.967V85.122
+                                            c0-13.327,10.812-24.139,24.139-24.139h13.975L256,219.792L473.886,60.983h13.962C501.188,60.983,512,71.794,512,85.122z"/>
+                                        <polygon style="fill:#D32E2A;" points="59.712,155.493 0,146.235 0,111.967 "/>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>                                       
+                                </svg>   
+                            </div>
+                        </div>
+                    </a>
+                    <div class="conatact-info">
+                        <h4>EMAIL US</h4>
+                        <a target="_blank" class="contact-info-link" href="mailto:Jagdish.chauhan01@gmail.com">Jagdish.chauhan01@gmail.com</a>
+                    </div>
+                </span>
+                <span class="column-contact">
+                    <div class="official-contacts">
+                        <div class="contact-icons">
+                            <svg width="50" height="50">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path style="fill:#FFD24D;" d="M512,129.029C512,57.77,439.257,0,349.533,0c-89.731,0-162.467,57.77-162.467,129.029
+                                        c0,63.663,58.056,116.554,134.419,127.108h-0.231c4.007,24.614-3.386,50.749-22.191,69.733c40.349,0,73.657-30.389,78.716-69.729
+                                        h-0.231C453.921,245.596,512,192.701,512,129.029z"/>
+                                    <g>
+                                        <circle style="fill:#F14742;" cx="292.261" cy="129.024" r="11.378"/>
+                                        <circle style="fill:#F14742;" cx="406.801" cy="129.024" r="11.378"/>
+                                        <circle style="fill:#F14742;" cx="349.536" cy="129.024" r="11.378"/>
+                                    </g>
+                                    <path style="fill:#1B4145;" d="M349.998,411.754c-24.59-24.589-50.926-45.288-50.926-45.288L260.7,404.838L107.162,251.3
+                                        l38.372-38.373c0,0-20.698-26.336-45.288-50.926c-24.59-24.589-50.926-45.288-50.926-45.288S3.343,159.01,0.25,192.558
+                                        c-4.137,44.904,43.395,126.545,118.021,201.172c74.626,74.625,156.267,122.157,201.171,118.021
+                                        c33.547-3.094,75.845-49.071,75.845-49.071S374.588,436.342,349.998,411.754z"/>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="conatact-info">
+                        <h4>GET A QUOTE</h4>
+                        <p class="contact-info-link">+91-9953841590</p>
+                    </div>
+                </span>
+                
+                <span class="column-contact">
+                    <a target="_blank" href="https://www.linkedin.com/in/JDchauhan/">
+                        <div class="official-contacts">
+                            <div class="contact-icons">
+                                <svg width="50" height="50">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
+                                        <path style="fill:#0077B7;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+                                            C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+                                            H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
+                                            c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+                                            s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+                                            c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+                                            c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+                                            c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+                                            L341.91,330.654L341.91,330.654z"/>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="conatact-info">
+                        <h4>FOLLOW US</h4>
+                        <a target="_blank" class="contact-info-link" href="https://www.linkedin.com/in/JDchauhan/">@JDchauhan</a>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer">
+            <div class="social-links-container links">
+                <a target="_blank" class="contact-info-link" href="https://www.github.com/JDchauhan">
+                    <span id="github" class="social-links"><i class="footer-icon fa fa-github"></i></span>
+                </a>
+                <a target="_blank" class="contact-info-link" href="https://www.linkedin.com/in/JDchauhan">
+                    <span id="linkedn" class="social-links"><i class="footer-icon fa fa-linkedin"></i></span>
+                </a>
+                <a target="_blank" class="contact-info-link" href="https://www.twitter.com/JDchauhan97">
+                    <span id="twitter" class="social-links"><i class="footer-icon fa fa-twitter"></i></span>
+                </a>
+                <a target="_blank" class="contact-info-link" href="https://www.facebook.com/JDchauhan97">
+                    <span id="fb" class="social-links"><i class="footer-icon fa fa-facebook"></i></span>
+                </a>
+                <a target="_blank" class="contact-info-link" href="https://t.me/JDchauhan">
+                    <span id="telegram" class="social-links"><i class="footer-icon fa fa-telegram"></i></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js" ></script>
 
 </body>
 </html>

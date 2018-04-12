@@ -1,37 +1,43 @@
-window.onload=function(){
-	var elements=document.getElementsByClassName("typewrite");
-    var toRotate=elements[0].getAttribute("data-type");
-    var data = JSON.parse(toRotate);
-    
-    var i = 0;
-    var speed = 100;
-    var j = 0;
-    var curr_data = data[j];
-
-    function typeWriter(curr_data) {
-        if (i < curr_data.length) {
-            document.getElementById("type").innerHTML += curr_data.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }else{
-            retypeWriter(curr_data);
-        }
-        }
-        function retypeWriter(curr_data) {
-        if (i > 0) {
-            document.getElementById("type").innerHTML = curr_data.slice(0,i -1) ;
-            i--;
-            setTimeout(retypeWriter, speed);
-        }else{
-            j = ( j + 1 ) % 2;
-            curr_data = data[j];
-            typeWriter(curr_data);
-        }
-    }
-    typeWriter(curr_data);
-
-
+filterSelection("all")
+function filterSelection(c) {
+var x, i;
+x = document.getElementsByClassName("column");
+if (c == "all") c = "";
+for (i = 0; i < x.length; i++) {
+    removeClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+}
 }
 
+function addClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+}
+}
 
+function removeClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+    arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+}
+element.className = arr1.join(" ");
+}                  
 
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("btn active");
+    console.log(current[0]);
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+});
+}
