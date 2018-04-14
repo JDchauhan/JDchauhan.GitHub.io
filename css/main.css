@@ -53,6 +53,10 @@ ul {
     
 }
 
+.nav-active {
+    background-color: rebeccapurple;
+}
+
 a.smooth-scroll:visited, a.smooth-scroll:hover, a.smooth-scroll:active, a.smooth-scroll:link {
     text-decoration: none;
     color: #fff;

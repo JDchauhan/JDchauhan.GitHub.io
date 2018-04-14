@@ -1,4 +1,3 @@
-filterSelection("all")
 function filterSelection(c) {
 var x, i;
 x = document.getElementsByClassName("column");
@@ -36,8 +35,49 @@ var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
 btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("btn active");
-    console.log(current[0]);
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
 });
+}
+
+filterSelection("all");
+
+// Add active class to the current button (highlight it)
+var navContainer = document.getElementById("navbar");
+var navs = navContainer.getElementsByClassName("nav-list");
+for (var i = 0; i < navs.length; i++) {
+navs[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("nav-list nav-active");
+    current[0].className = current[0].className.replace(" nav-active", "");
+    this.className += " nav-active";
+});
+}
+
+
+window.onscroll = function changeClass(){
+    var scrollPosY = window.pageYOffset | document.body.scrollTop;
+
+    var homeHeight = document.getElementById('home').clientHeight;
+    var aboutHeight = homeHeight + document.getElementById('about').clientHeight;
+    var skillsHeight = aboutHeight + document.getElementById('skills').clientHeight;
+    var portfolioHeight = skillsHeight + document.getElementById('portfolio').clientHeight;
+    var resumeHeight = portfolioHeight + document.getElementById('resume').clientHeight;
+    
+    var current = document.getElementsByClassName("nav-list nav-active");
+    current[0].className = current[0].className.replace(" nav-active", "");
+    
+    if(scrollPosY <= homeHeight){
+        document.getElementById("home-nav").className = "nav-list nav-active";
+    }else if(scrollPosY <= aboutHeight) {   
+        document.getElementById("about-nav").className = "nav-list nav-active";
+    }else if(scrollPosY <= skillsHeight) {   
+        document.getElementById("skills-nav").className = "nav-list nav-active";
+    }else if(scrollPosY <= portfolioHeight) {   
+        document.getElementById("portfolio-nav").className = "nav-list nav-active";
+    }else if(scrollPosY <= resumeHeight) {   
+        document.getElementById("resume-nav").className = "nav-list nav-active";
+    }else{
+        document.getElementById("contact-nav").className = "nav-list nav-active";
+    }
+
 }
