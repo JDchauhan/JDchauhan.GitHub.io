@@ -147,15 +147,8 @@ h5 {
     margin: 5%;
 }
 
-#diamond:after {
-	content: '';
-	position: absolute;
-	left: -50px;
-	top: 50px;
-	width: 0;
-	height: 0;
-	border: 50px solid transparent;
-	border-top-color: red;
+.justify {
+    text-align: justify;
 }
 
 .personal-info {
@@ -415,7 +408,10 @@ td {
 }
 
 .main-contact {
-    margin-bottom: 10%;
+    margin-bottom: 0;
+    margin-left: 5%;
+    height: 200px;
+
 }
 
 .column-contact {
@@ -426,7 +422,7 @@ td {
 }
 
 .official-contacts {
-    margin: 0 50%;
+    margin: auto;
     height: 100px;
     width: 100px;
     border: 1px solid #d1d1d1;
@@ -437,9 +433,8 @@ td {
     margin-top: 25%;
 }
 
-.conatact-info {
-    margin-left: 30%;
-    text-align: center;
+.contact-info {
+    margin-left: auto;
 }
 
 .contact-info-link {
@@ -451,6 +446,7 @@ td {
     margin-top: 5%;
     text-align: center;
     padding-bottom: 0 !important;
+    padding-top: 0 !important;
 }
 
 .links {
@@ -483,37 +479,71 @@ td {
     background-color: #333333 !important;
 }
 
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 5% 5%;
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+    .left-section {
+        float: none;
+        text-align: center;
+    }
+
+    .right-section {
+        float: none;
+        text-align: center;
+    }
+
+    .intro {
+        height: 800px;
+    }
+    
+    .social-links-container {
+        margin: 5% 5%;
+    }
+
+    .social-links {
+        margin: 5%;
+    }
+
+    .footer-link {
+        margin: 0%;
+    }
+
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     
     .container {
         padding-bottom: 0;  
     }
 
     .main-contact {
-        margin-bottom: 0;
+        margin-left: 0;
+        height: 700px;
     }
 
-    .left-section{
+    .left-section {
         float: none;
+        text-align: center;
+    }
+    .right-section {
+        float: none;
+        text-align: center;
     }
 
     .profile-pic-container {
         padding-left: 0;
     }
 
-    .profile-pic {
-        height: 100%;
-        width: 100%;
-    }
-
     .contact-info-link {
         margin-left: 4%;   
-    }
-
-    .right-section {
-        float: none;
-        width: 100%;
     }
 
     .personal-info {
@@ -535,7 +565,7 @@ td {
     }
 
     .skills {
-        height: 1300px;
+        height: 1400px;
     }
 
     .column-skills {
@@ -550,15 +580,6 @@ td {
     .column-contact {
         text-align: center;
         float: none;
-    }
-
-    .official-contacts {
-        margin: 0 38%;
-    }
-
-    .conatact-info {
-        margin-left: 0;
-        margin-bottom: 10%;
     }
 
     .social-links-container {
@@ -624,11 +645,7 @@ td {
     }
 
     .skills {
-        height: 1100px;
-    }
-
-    .official-contacts {
-        margin: 0 30%;
+        height: 1200px;
     }
 
     .footer-link {
