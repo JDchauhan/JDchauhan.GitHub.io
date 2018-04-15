@@ -249,7 +249,7 @@ td {
 
 .progress-bar {
     width: 100%;
-    background-color: grey;
+    background-color: lightgrey;
 }
 
 #bar {
@@ -499,6 +499,16 @@ td {
     background-color: #333333 !important;
 }
 
+.fa-envelope {
+    font-size: 45px !important;
+    color: grey !important;
+}
+
+.big-contact-fa {
+    font-size: 50px !important;
+    color: grey !important;
+}
+
 
 @media screen and (max-width: 1000px) {
     .container {
@@ -582,7 +592,7 @@ td {
         float: right;
     }
 
-    .bar-icon {
+    .fa-bars {
         font-size: 20px !important;
     }
 
