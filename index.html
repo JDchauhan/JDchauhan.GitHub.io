@@ -30,15 +30,20 @@
                 </div>
             </a>
             <div class="nav-content">
-                <ul class="navbar" id="navbar">
-                    <li id="home-nav" class="nav-list nav-active"><a class="smooth-scroll" href="#home">Home</a></li>
-                    <li id="about-nav" class="nav-list"><a class="smooth-scroll" href="#about">About</a></li>
-                    <li id="skills-nav" class="nav-list"><a class="smooth-scroll" href="#skills">Skills</a></li>
-                    <li id="portfolio-nav" class="nav-list"><a class="smooth-scroll" href="#portfolio">Portfolio</a></li>
-                    <li id="resume-nav" class="nav-list"><a class="smooth-scroll" href="#resume">Resume</a></li>
-                    <li id="contact-nav" class="nav-list"><a class="smooth-scroll" href="#contact">Contact</a></li>
+                <span>
+                    <ul class="navbar-controller">
+                        <li class="navbar-control" onclick="display_nav();"><i class="bar-icon fa fa-bars"></i></li>
+                    </ul>
+                    <ul class="navbar" id="navbar">
                         
-                </ul>
+                        <a class="smooth-scroll" href="#home"><li id="home-nav" class="nav-list nav-active">Home</li></a>
+                        <a class="smooth-scroll" href="#about"><li id="about-nav" class="nav-list">About</li></a>
+                        <a class="smooth-scroll" href="#skills"><li id="skills-nav" class="nav-list">Skills</li></a>
+                        <a class="smooth-scroll" href="#portfolio"><li id="portfolio-nav" class="nav-list">Portfolio</li></a>
+                        <a class="smooth-scroll" href="#resume"><li id="resume-nav" class="nav-list">Resume</li></a>
+                        <a class="smooth-scroll" href="#contact"><li id="contact-nav" class="nav-list">Contact</li></a>    
+                    </ul>
+                </span>
             </div>
         </section>
         <!-- end NAVIGATION -->
