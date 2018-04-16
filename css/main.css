@@ -123,10 +123,11 @@ h5 {
     margin: 0;
 }
 
-
 #home {
     background: url("../assets/bg-header.jpg") no-repeat center center fixed;
-    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
     height: 100vh; 
