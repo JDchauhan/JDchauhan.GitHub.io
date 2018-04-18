@@ -1,3 +1,8 @@
+window.onload = function (){
+    document.getElementById("page-content").className = "display";
+    document.getElementById("preloader").className = "hidden";
+}
+
 function filterSelection(c) {
     var x, i;
     x = document.getElementsByClassName("column");
