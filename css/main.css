@@ -192,22 +192,20 @@ h5 {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: calc(100vh + 8%);
-    transform: scale(1.04);
-    margin: -4%;
+    left: -5%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: url("../assets/keyboard.jpg") no-repeat center center fixed;
+    
     filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
     -webkit-filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
     -moz-filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
     -o-filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
     -ms-filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    z-index: -20;
-    background: url("../assets/keyboard.jpg") no-repeat center center fixed;
+    
+    
 }
 
 #home {
