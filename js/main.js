@@ -71,7 +71,15 @@ window.onscroll = function changeClass(){
     
     var current = document.getElementsByClassName("nav-active");
     current[0].className = current[0].className.replace(" nav-active", "");
+
+    //change parallax
+    if(scrollPosY <= homeHeight / 1.1){
+        document.getElementById("home").className="home";
+    }else{
+        document.getElementById("home").className="";
+    }
     
+    //change div
     if(scrollPosY <= homeHeight / 1.1){
         document.getElementById("home-nav").className = "nav-list nav-active";
     }else if(scrollPosY <= aboutHeight / 1.05) {   
