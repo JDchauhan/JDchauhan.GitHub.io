@@ -186,26 +186,19 @@ h5 {
     margin: 0;
 }
 
-#home::before {
+.home::before {
     content: '';
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: -80px;
     right: 0;
     bottom: 0;
-    left: -5%;
+    left: 0;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background: url("../assets/keyboard.jpg") no-repeat center center fixed;
-    
-    filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
-    -webkit-filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
-    -moz-filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
-    -o-filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
-    -ms-filter: blur(5px) drop-shadow(30px -13px 20px rgba(0,0,0,1));
-    
-    
+    background: url("../assets/mac-keyboard.jpg") no-repeat center center fixed; 
+    z-index: -20;
 }
 
 #home {
@@ -213,17 +206,12 @@ h5 {
         repeating-linear-gradient(-45deg,transparent,#000000 ,1px,transparent 2px),
         url("../assets/bg-header.jpg");
     */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
     height: 100vh;
 }
 
 
 .about {
-
+    background-color: #f1f1f1;
 }
 
 .intro {
@@ -610,10 +598,6 @@ td {
 @media screen and (max-width: 1000px) {
     .container {
         padding: 5% 5%;
-    }
-
-    #home::before{
-        height: calc(100vh + 1%);
     }
 }
 
