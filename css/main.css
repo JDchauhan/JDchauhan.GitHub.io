@@ -601,11 +601,15 @@ td {
 .fa-envelope {
     font-size: 45px !important;
     color: grey !important;
+    height: 45px;
+    width: 52px;
 }
 
 .big-contact-fa {
     font-size: 50px !important;
     color: grey !important;
+    height: 50px;
+    width: 50px;
 }
 
 
