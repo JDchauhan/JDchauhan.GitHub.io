@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    color: #373838;
 }
 
 body {
@@ -10,6 +11,15 @@ body {
     font-family: Quicksand,sans-serif;
     background-color: #f1f1f1;
     overflow-x: hidden;
+}
+
+li {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+b, h1, h2, h3, h4, h5, h6 {
+    color: #2A2A2B;
 }
 
 .display {
@@ -107,12 +117,12 @@ li {
     position: fixed;
     top: 6px;
     z-index: 1;
-    color: #fff;
+    color: #f1f1f1;
     float: left;
     font-weight: bold;
     font-size: 120%;
     padding: 3px;
-    border: 3px solid #fff;
+    border: 3px solid #f1f1f1;
     border-radius: 5px; 
 }
 
@@ -128,8 +138,8 @@ li {
     display: none;
 }
 
-.navbar-control {
-    
+.navbar-control .fa-bars {
+    color: #f1f1f1;
 }
 
 .nav-active {
@@ -380,10 +390,11 @@ td {
 .btn {
   border: none;
   outline: none;
-  padding: 12px 16px;
+  padding: 10px 8px;
   background-color: white;
   border: 1px solid #333333;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -806,10 +817,6 @@ td {
 
     .social-links {
         margin: 4%;
-    }
-
-    .btn {
-        padding: 5px 1px;
     }
 
     .skills {
