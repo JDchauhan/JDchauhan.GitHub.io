@@ -293,6 +293,7 @@ td {
     font-size: 14px; 
     height: 35px;
     width: 90%;
+    font-weight: bold;
 }
 
 .resume-button:hover {
@@ -603,6 +604,15 @@ td {
     color: grey !important;
     height: 45px;
     width: 52px;
+}
+
+.fa-star, .fa-star-half-o, .fa-star-o {
+    color: #808080;
+}
+
+.fa-star:hover, .fa-star-half-o:hover, .fa-star-o:hover {
+    color: #808080 !important;
+    background: #f1f1f1 !important;
 }
 
 .big-contact-fa {
